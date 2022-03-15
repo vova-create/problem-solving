@@ -6,10 +6,12 @@ function split(string, divider, limit){
     let dividerPosition = 0;
     const arr = [];
     for(let i = 0; i < string.length; i++){
+        if(arr.length === limit){
+            return arr
+        }
         const currentSymbol = string[i]
         if(divider === ''){
-            arr.push(string.slice(start, i + 1))
-            start = i + 1
+            arr.push(currentSymbol)
             continue
         }
         if(currentSymbol === divider){
@@ -21,7 +23,7 @@ function split(string, divider, limit){
     if(dividerPosition !== string.length){
         arr.push(string.slice(start, string.length))
     }
-    return arr.slice(0, limit || string.length)
+    return arr
 }
 
-console.log(split('asdasdasd'))
+console.log(split('asdasdasd', '', 5 ))
