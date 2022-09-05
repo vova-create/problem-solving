@@ -1,0 +1,148 @@
+$background-color: #E4E4E4
+$header-bacground-color: #FFFFFF
+$primary-color: #475F45
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&display=swap')
+*
+  margin: 0
+  padding: 0
+  font-size: 14px
+
+body
+  width: fit-content
+
+h1
+  color: #343D33
+  font-family: 'Libre Baskerville', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 57px
+  line-height: 110%
+  @media (max-width: 800px)
+    font-size: 50px
+    text-align: center
+    margin-bottom: 20px
+
+p
+  font-family: 'Roboto', sans-serif
+  font-style: normal
+  font-weight: 300
+  font-size: 25px
+  line-height: 150%
+  color: #414840
+  @media (max-width: 800px)
+    text-align: center
+    font-weight: 300
+    font-size: 22px
+    margin-bottom: 20px
+
+nav
+  display: flex
+  flex-direction: column
+  text-align: center
+
+nav a
+  position: relative
+  text-decoration: none
+  color: white
+  font-size: 2em
+  display: inline-block
+  margin-top: 1.25em
+  transition: color 0.2s ease-in-out
+  letter-spacing: 1px
+
+nav a:before
+  content: ''
+  height: 0
+  position: absolute
+  width: 0.25em
+  background-color: white
+  left: -0.5em
+  transition: all 0.2s ease-in-out
+
+nav a:hover
+  color: #1f2c1f
+
+.nav-block__nav-button
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 10px 20px
+  text-transform: uppercase
+  border: 2px solid
+  box-sizing: border-box
+  color: white
+  max-width: 150px
+  margin: 50px  auto
+  @media (max-width: 800px)
+    padding: 10px 20px
+
+.hamburger
+  display: none
+  position: fixed
+  top: 4.5em
+  right: 5%
+  margin-left: -2em
+  margin-top: -36px
+  width: 2em
+  height: 45px
+  z-index: 2
+  @media (max-width: 800px)
+    display: block
+    top: 3.5em
+
+.hamburger div
+  position: relative
+  width: 3em
+  height: 7px
+  border-radius: 3px
+  background-color: $primary-color
+  margin-top: 8px
+  transition: all 0.3s ease-in-out
+  @media (max-width: 800px)
+    width: 2em
+    height: 4px
+
+#toggle
+  display: none
+
+#toggle:checked + .hamburger .hamburger__top-bun
+  transform: rotate(-45deg)
+  margin-top: 25px
+
+#toggle:checked + .hamburger .bottom-bun
+  opacity: 0
+  transform: rotate(45deg)
+
+#toggle:checked + .hamburger .hamburger__meat
+  transform: rotate(45deg)
+  margin-top: -7px
+
+.show-mobile
+  top: 0
+  transform: scale(1) !important
+
+.nav
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: $primary-color
+  background-image: url("../assets/Frame.png")
+  background-repeat: no-repeat
+  background-position: bottom 50px right 0
+  left: 0
+  right: 0
+  bottom: 0
+  overflow: hidden
+  transition: all 0.3s ease-in-out
+  transform: scale(0)
+#nav
+  opacity: 2
+.nav-block
+  position: relative
+  overflow: hidden
+  overflow-y: auto
+  height: 100%
+
+
+
+

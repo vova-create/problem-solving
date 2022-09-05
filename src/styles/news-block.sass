@@ -1,0 +1,82 @@
+@import "style"
+
+.news-block
+  display: flex
+  justify-content: center
+  gap: 40px
+  margin: 50px 50px
+  @media (max-width: 800px)
+    display: flex
+    flex-direction: column
+    margin: 0
+    padding-left: 20px
+  @media (max-width: 375px)
+      padding-left: 0
+
+.news-block__main
+  max-width: 400px
+  @media (max-width: 800px)
+    display: flex
+    align-items: center
+    max-width: 100%
+  @media (max-width: 375px)
+    display: flex
+    flex-direction: column
+
+
+
+.news-block__description
+  margin: 20px 30px 0
+  @media (max-width: 375px)
+    text-align: center
+
+
+.news-block__description-title
+  font-family: 'Libre Baskerville', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 23px
+  line-height: 110%
+  color: #475F45
+  margin-bottom: 10px
+
+.news-block__description-text
+  font-family: 'Roboto', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 16px
+  line-height: 150%
+  margin-bottom: 10px
+
+
+.news-block__description-date
+  font-family: 'Roboto', sans-serif
+  font-style: italic
+  font-weight: 400
+  font-size: 16px
+  line-height: 150%
+  margin-top: 10px
+
+.news-block__aside
+  //display: flex
+  //border: 1px solid blue
+
+.news-block__aside-item
+  display: flex
+  @media (max-width: 375px)
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+.news-block__aside-image
+  @media (max-width: 375px)
+    margin: 0 auto
+
+
+//border: 1px solid orangered
+
+.news-block__divider
+  margin: 20px 0
+  height: 1px
+  background: #C4C4C4
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)

@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<BotanicalGarden/>
+<BotanicalGardenDescription/>
+<BotanicalNews/>
+<BotanicalFooter/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BotanicalGarden from "@/components/BotanicalGarden";
+import BotanicalGardenDescription from "@/components/BotanicalGardenDescription";
+import BotanicalNews from "@/components/BotanicalNews";
+import BotanicalFooter from "@/components/BotanicalFooter";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BotanicalGardenDescription,
+    BotanicalGarden,
+    BotanicalNews,
+    BotanicalFooter
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

@@ -1,0 +1,119 @@
+@import "style"
+
+.description-block
+  width: 100%
+  background-color: #1f2c1f
+  margin-top: 100px
+  @media (max-width: 800px)
+    display: flex
+    width: 100%
+    flex-direction: column-reverse
+
+.description-block__upper
+  display: flex
+  justify-content: space-between
+  padding-top: 50px
+  flex-wrap: wrap
+  //margin: 50px
+  @media (max-width: 800px)
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-bottom: 100px
+
+
+.description-block__upper-content
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  align-self: flex-start
+  @media (max-width: 375px)
+    text-align: center
+    align-self: center
+
+.description-block__wrapper-button
+  align-self: flex-start
+  @media (max-width: 375px)
+    align-self: center
+
+.description-block__button
+  display: flex
+  flex-direction: row
+  align-items: center
+  padding: 15px 25px
+  text-transform: uppercase
+  border: 2px solid
+  box-sizing: border-box
+  color: white
+  cursor: pointer
+  max-width: 150px
+  margin-top: 20px
+  @media (max-width: 800px)
+    margin-top: 20px
+
+.description-block__title
+  font-weight: 400
+  font-size: 45px
+  text-transform: capitalize
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+  color: #FFFFFF
+  inline-size: 350px
+
+.description-block__text
+  color: white
+  inline-size: 350px
+  font-weight: 400
+  font-size: 20px
+  @media (max-width: 800px)
+    align-self: flex-start
+    font-size: 20px
+
+.description-block__lower
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-evenly
+  margin: 50px 0
+  padding-bottom: 50px
+  @media (max-width: 800px)
+    display: none
+
+.description-block__branch
+  position: absolute
+  right: 7px
+  bottom: 0
+  height: 600px
+
+.description-block_image-upper
+  max-width: 480px
+  max-height: 354px
+  width: 100%
+  height: auto
+  @media (max-width: 800px)
+    margin-bottom: 30px
+    max-width: 534px
+    max-height: 354px
+    width: 100%
+    height: auto
+
+.description-block_image-lower
+  max-width: 1040px
+  max-height: 409px
+  width: 100%
+  height: auto
+
+.description-block_image-lower-mobile
+  margin-bottom: 40px
+  max-width: 536px
+  max-height: 211px
+  width: 100%
+  height: auto
+  @media (min-width: 801px)
+    display: none
+
+.description-block__wrapper
+  max-width: 912px
+  margin: 0 auto
+  box-sizing: border-box
+  @media (max-width: 800px)
+    display: block
